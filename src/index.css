@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer{
+  body{
+    @apply
+    bg-[#0f0f0f]
+  }
+  *{
+    min-height: 0;
+    min-width: 0;
+  }
+}
+
+@Layer components{
+  .container{
+    @apply
+    ml-[20px] mr-[20px]
+  }
+
+  footer ul li{
+    @apply
+    text-white
+    text-sm
+  }
+  
+  .category ul li button{
+    @apply
+    text-white
+  }
+  /* .time{
+    
+background: rgba(151, 55, 55, 0.274);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(168, 28, 28, 0.699);
+backdrop-filter: blur(9.3px);
+-webkit-backdrop-filter: blur(9.3px);
+border: 1px solid rgba(28, 28, 28, 0.3);
+  } */
+  
+}
+.slider-container{
+  @apply
+  w-full
+  px-7
+}
+.slick-slide {
+  @apply w-auto mx-2;
+}
+
+.slick-slide.slick-active.slick-current button {
+  @apply bg-[#f0f0f0] text-black;
+}
+
+.slick-slide button {
+  @apply py-1 px-4 bg-[#3f3f3f] rounded-lg;
+}
