@@ -25,6 +25,7 @@ import { MdOutlineFeedback } from "react-icons/md";
 import  kids from "../../../public/img/kids.svg"
 import  prem from "../../../public/img/premium.svg"
 import  ytmusic from "../../../public/img/yt-music.svg"
+import { Link } from 'react-router-dom';
 
 
 
@@ -36,9 +37,12 @@ const Sidebar = () => {
 
         <div className='headerHori w-[240px] h-screen overflow-y-scroll '>
             <ul className=' mb-2  '>
-                <li className='text-white flex  items-center gap-3 rounded-md bg-sidebarhover py-2 px-3 mb-2 '>
+                <li className=' '>
+                    {/* must finished */}
+                    <Link to="#" className='text-white flex  items-center gap-3 rounded-md bg-sidebarhover py-2 px-3 mb-2'>
                     <IoMdHome />
-                    <p>Home</p>
+                    Home</Link>
+
                 </li>
                 <li className='text-white flex  items-center gap-3 rounded-md hover:bg-sidebarhover  py-2 px-3 mb-2'>
                     <SiYoutubeshorts />
