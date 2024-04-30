@@ -1,15 +1,11 @@
 import React from 'react'
 
-import { ytVideos } from './data'
-import { baseImgUrl2 } from '../helpers/functions-general'
-const YtVideos = () => {
+import { baseImgUrl2 } from '../../helpers/functions-general'
+const YtVideos = ({item, key}) => {
   return (
     <>
-      
         
-        {ytVideos.map((item, key)=>{
-            return(
-          <div className="p-3" key={key} item={item}>
+          <div className="p-3" key={key}>
             <div className="playback relative mb-3">
               <img
                 src={`${baseImgUrl2}/videos/${item.img}`}
@@ -27,7 +23,7 @@ const YtVideos = () => {
                 />
               </div>
               <div >
-                <h2 className='text-white'>{item.title}</h2>
+                <h2 className='text-white line-clamp-1'>{item.title}</h2>
                 {/* <h3 className='text-white'>Lorem, ipsum.</h3> */}
                 <h3 className='text-[#5d5d5d]'>{item.channel}.</h3>
                 <h2>
@@ -37,8 +33,7 @@ const YtVideos = () => {
               </div>
             </div>
           </div>
-          )
-        })}
+         
 
           
         

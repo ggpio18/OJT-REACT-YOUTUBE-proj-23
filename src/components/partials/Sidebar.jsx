@@ -35,50 +35,60 @@ const Sidebar = () => {
     <>
       {/* SIDEBAR */}
 
-        <div className='headerHori w-[240px] h-screen overflow-y-scroll '>
+        <div className='headerHori w-[240px] h-screen hover:overflow-y-scroll  '>
             <ul className=' mb-2  '>
                 <li className=' '>
                     {/* must finished */}
                     <Link to="#" className='text-white flex  items-center gap-3 rounded-md bg-sidebarhover py-2 px-3 mb-2'>
                     <IoMdHome />
                     Home</Link>
-
                 </li>
-                <li className='text-white flex  items-center gap-3 rounded-md hover:bg-sidebarhover  py-2 px-3 mb-2'>
+                <li>
+                <Link to="#" className='text-white flex  items-center gap-3 rounded-md hover:bg-sidebarhover  py-2 px-3 mb-2'>
                     <SiYoutubeshorts />
-                    <p>Shorts</p>
+                    Shorts</Link>
                 </li>
-                <li className='text-white flex  items-center gap-3 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2'>
+                <li>
+                <Link to="#" className='text-white flex  items-center gap-3 rounded-md hover:bg-sidebarhover  py-2 px-3 mb-2'>
                     <MdSubscriptions />
-                    <p>Subscriptions</p>
+                    Subscriptions</Link>
                 </li>
             </ul>
+
             <ul className='border-t-2 border-[#3f3f3f]'>
                 <li className='text-white flex  items-center gap-1 rounded-md hover:bg-sidebarhover py-2 px-3 mb-1 mt-1'>
                     <p>You</p>
                     <IoChevronForwardSharp />
                 </li>
-                <li className='text-white flex  items-center gap-3 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2'>
+                <li>
+                <Link to="#" className='text-white flex  items-center gap-3 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2'>
                     <IoMdHome />
-                    <p>Your Channel</p>
+                    Your Channel</Link>
                 </li>
-                <li className='text-white flex  items-center gap-3 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2'>
+                <li>
+                <Link to="#" className='text-white flex  items-center gap-3 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2'>
                     <RxCounterClockwiseClock />
-                    <p>History</p>
-                </li><li className='text-white flex  items-center gap-3 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2'>
+                    History</Link>
+                </li>
+                <li>
+                    <Link to="#" className='text-white flex  items-center gap-3 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2'>   
                     <RiPlayList2Fill />
-                    <p>Playlist</p>
+                    Playlist</Link>
                 </li>
-                <li className='text-white flex  items-center gap-3 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2'>
+                <li>
+                <Link to="#" className='text-white flex  items-center gap-3 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2'>   
                     <PiVideoDuotone />
-                    <p>Your Videos</p>
+                    Playlist</Link>
                 </li>
-                <li className='text-white flex  items-center gap-3 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2'>
+                <li>
+                     <Link to="#" className='text-white flex  items-center gap-3 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2'>   
                     <PiClockLight />
-                    <p>Watch later</p>
-                </li><li className='text-white flex  items-center gap-3 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2'>
+                    Watch later</Link>
+                </li>
+                <li>
+                    <Link to="#" className='text-white flex  items-center gap-3 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2'>
                     <AiOutlineLike />
-                    <p>liked Videos</p>
+                    liked Videos</Link>
                 </li>
             </ul>
 
@@ -86,25 +96,35 @@ const Sidebar = () => {
                 <li className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 mt-1'>
                     <p>Subscription</p>
                 </li>
-                <li className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
+                <li>
+                <Link to="#" className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
+                    <img src="https://via.placeholder.com/150x150" alt=""  className='rounded-full size-[20px]'/>
+                    <p>YOU</p>
+                    </Link>
+                </li>
+                <li>
+                    <Link to="#" className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
                     <img src="https://via.placeholder.com/150x150" alt=""  className='rounded-full size-[20px]'/>
                     <p>You</p>
+                    </Link>
                 </li>
-                <li className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
+                <li>
+                     <Link to="#" className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
                     <img src="https://via.placeholder.com/150x150" alt=""  className='rounded-full size-[20px]'/>
                     <p>You</p>
+                    </Link>
                 </li>
-                <li className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
+                <li>
+                    <Link to="#" className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
                     <img src="https://via.placeholder.com/150x150" alt=""  className='rounded-full size-[20px]'/>
                     <p>You</p>
+                    </Link>
                 </li>
-                <li className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
-                    <img src="https://via.placeholder.com/150x150" alt=""  className='rounded-full size-[20px]'/>
+                <li>
+                    <Link to="#" className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
+                    <IoAddCircleOutline className='size-[20px]'/>
                     <p>You</p>
-                </li>
-                <li className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
-                <IoAddCircleOutline className='size-[20px]'/>
-                    <p>You</p>
+                    </Link>
                 </li>
                 
                 
@@ -114,33 +134,47 @@ const Sidebar = () => {
                 <li className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 mt-1'>
                     <p>Explore</p>
                 </li>
-                <li className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
+                <li>
+                    <Link to="#" className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
                     <SlFire />
                     <p>Trending</p>
+                    </Link>
                 </li>
-                <li className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
+                <li>
+                    <Link to="#" className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
                     <PiMusicNoteThin />
                     <p>Music</p>
+                    </Link>
                 </li>
-                <li className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
+                <li>
+                    <Link to="#" className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
                     <BiMoviePlay />
                     <p>Movies</p>
+                    </Link>
                 </li>
-                <li className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
+                <li>
+                    <Link to="#" className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
                     <SiYoutubegaming />
                     <p>Gaming</p>
+                    </Link>
                 </li>
-                <li className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
+                <li>
+                    <Link to="#" className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
                     <FaRegNewspaper />
                     <p>News</p>
+                    </Link>
                 </li>
-                <li className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
+                <li>
+                    <Link to="#" className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
                     <IoTrophyOutline />
                     <p>Sports</p>
+                    </Link>
                 </li>
-                <li className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
+                <li>
+                    <Link to="#" className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
                     <GiHanger />
                     <p>Fashion & Beauty</p>
+                    </Link>
                 </li>
                 
                 
@@ -150,41 +184,57 @@ const Sidebar = () => {
                 <li className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 mt-1'>
                     <p>More from youtube</p>
                 </li>
-                <li className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
+                <li>
+                    <Link to="#" className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
                     <img src={prem} alt=""  className='size-[24px]'/>
                     <p>Youtube Premiuim</p>
+                    </Link>
                 </li>
-                <li className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
+                <li>
+                    <Link to="#" className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
                     <img src={prem} alt=""  className='size-[24px]'/>
                     <p>Youtube Studio</p>
+                    </Link>
                 </li>
-                <li className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
+                <li>
+                    <Link to="#" className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
                     <img src={ytmusic} alt=""  className='size-[24px]'/>
                     <p>Youtube Music</p>
+                    </Link>
                 </li>
-                <li className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
+                <li>
+                    <Link to="#" className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
                     <img src={kids} alt=""  className='size-[24px]'/>
                     <p>Youtube Kids</p>
+                    </Link>
                 </li>
                
             </ul>
 
             <ul className='border-t-2 border-[#3f3f3f]'>
-                <li className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 mt-1'>
+                <li>
+                    <Link to="#" className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 mt-1'>
                     <IoSettingsOutline />
                     <p>Settings</p>
+                    </Link>
                 </li>
-                <li className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
+                <li>
+                    <Link to="#" className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
                     <CiFlag1 />
                     <p>Report History</p>
+                    </Link>
                 </li>
-                <li className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
+                <li>
+                    <Link to="#" className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
                     <IoHelpCircleOutline />
                     <p>Help</p>
+                    </Link>
                 </li>
-                <li className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
+                <li>
+                    <Link to="#" className='text-white flex  items-center gap-5 rounded-md hover:bg-sidebarhover py-2 px-3 mb-2 '>
                     <MdOutlineFeedback />
                     <p>Send Feedback</p>
+                    </Link>
                 </li>
                
             </ul>

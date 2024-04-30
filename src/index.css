@@ -56,3 +56,21 @@ border: 1px solid rgba(28, 28, 28, 0.3);
 .slick-slide button {
   @apply py-1 px-4 bg-[#3f3f3f] rounded-lg;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(16, 16, 16); 
+  border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  background:rgba(54, 54, 54, 0.864); 
+  border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+  background:rgb(54, 56, 58); 
+  }
